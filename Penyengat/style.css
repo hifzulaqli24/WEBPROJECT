@@ -1,10 +1,10 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: white;
+  background-color: #ffffff;
   color: #333;
 }
 .navbar {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #eee;
 }
 .navbar-brand {
@@ -160,19 +160,187 @@ destination-card p {
   background-size: cover;
   background-position: center;
 }
-.highlight-img {
-  background-image: url('https://www.travelsecrets.in/wp-content/uploads/2023/03/himalayas.jpg');
-  background-size: cover;
-  background-position: center;
-}
 footer {
-  background-color: #f8f9fa;
-  font-size: 0.9rem;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 40px 0;
+        }
+        footer h6 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #ffc107;
+        }
+        footer p, footer ul {
+            color: #ced4da;
+        }
+        footer ul li {
+            margin-bottom: 0.5rem;
+        }
+        footer ul li a {
+            color: #ced4da;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: #ffc107;
+            text-decoration: underline;
+        }
+        .social-icons a {
+            color: #ced4da;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        .social-icons a:hover {
+            color: #ffc107;
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #495057;
+            padding-top: 15px;
+            color: #ced4da;
+        }
+
+/* ===== Tampilan Komentar Pengunjung ===== */
+#commentForm {
+  background-color: #e3e3e3;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  max-width: 600px;
 }
-footer h6 {
+
+#commentForm label {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+#commentForm input,
+#commentForm textarea {
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  min-height: 45px;
+}
+
+#commentForm textarea {
+  min-height: 200px;
+}
+
+#commentForm button {
+  background: linear-gradient(to right, #1e90ff, #007bff);
+  border: none;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
+}
+
+#commentForm button:hover {
+  background: linear-gradient(to right, #007bff, #0056b3);
+}
+
+/* Tampilan komentar terbaru */
+#commentDisplay {
+  background-color: #e3e3e3;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  height: 433px; /* Menambah tinggi minimum */
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.comment-item {
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.comment-item:last-child {
+  border-bottom: none;
+}
+
+.comment-item strong {
+  display: block;
   font-weight: 600;
-  margin-bottom: .75rem;
+  color: #2c3e50;
+  margin-bottom: 0.2rem;
 }
-.section-padding {
-  padding: 3rem 0;
+
+.comment-item span {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+/* Komentar dalam bentuk kartu per orang */
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comment-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #007bff;
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.comment-card strong {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.comment-card span {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+/* Container scrollable dengan batas maksimal 3 komentar terlihat */
+#commentDisplay {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.comment-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #007bff;
+  padding: 1rem 1.2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+.comment-card strong {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.comment-card span {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* Efek hover pada kartu komentar */
+.comment-card:hover {
+  background-color: #f8f9fa; /* Background berubah sedikit lebih terang */
+  border-left-color: #0056b3; /* Warna border kiri berubah */
+  transform: translateY(-3px); /* Sedikit naik ke atas */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan lebih jelas */
+  transition: all 0.3s ease; /* Animasi transisi halus */
+}
+
+.comment-card:hover strong {
+  color: #0056b3; /* Nama berubah warna saat di-hover */
 }

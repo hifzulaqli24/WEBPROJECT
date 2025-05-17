@@ -1,0 +1,178 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #333;
+}
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+.nav-link {
+  color: #333 !important;
+}
+.hero {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4H7mpe2E2IxGKn8A5qXoFCwwWH1IJsKGQg&s');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 6rem 2rem;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 190%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+h2 {
+  font-weight: 600;
+  margin-top: 2rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.destination-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.destination-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.destination-scroll::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.destination-card {
+  flex: 0 0 auto;
+  width: 210px;
+  text-align: center;
+}
+
+.destination-img {
+  width: 200px;   /* Lebar gambar */
+  height: 300px;  /* Tinggi gambar (portrait) */
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+destination-card p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #2c3e50; /* warna gelap tapi lebih lembut dari hitam */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.03em;
+}
+
+.destination-card small {
+  font-size: 0.9rem;
+  color: #7f8c8d; /* abu gelap */
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+  letter-spacing: 0.02em;
+}
+
+
+
+
+/* Lightbox overlay */
+/* Lightbox: Transisi smooth */
+/* Lightbox: Transisi smooth */
+
+/* Lightbox: Transisi smooth */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0; /* Mulai dengan opacity 0 */
+  pointer-events: none; /* Nonaktifkan interaksi sebelum lightbox muncul */
+  transition: opacity 0.4s ease; /* Efek fade-in saat lightbox muncul */
+}
+
+/* Ketika lightbox muncul, ubah opacity dan aktifkan pointer events */
+.lightbox.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Efek zoom pada gambar di lightbox */
+/* Efek zoom pada gambar di lightbox */
+.lightbox img {
+  width: 50vw;
+  border-radius: 1rem;
+  transform: scale(1); /* Mengatur skala awal 1 */
+  transition: transform 0.3s ease; /* Efek smooth saat gambar diperbesar */
+}
+
+/* Ketika lightbox muncul, perbesar gambar sedikit dengan transform */
+.lightbox.show img {
+  transform: scale(1.05); /* Skala sedikit lebih besar */
+}
+
+
+.story-img {
+  background-image: url('https://img.freepik.com/premium-photo/beautiful-landscape-view-mount-fishtail-nepal_131480-208.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.highlight-img {
+  background-image: url('https://www.travelsecrets.in/wp-content/uploads/2023/03/himalayas.jpg');
+  background-size: cover;
+  background-position: center;
+}
+footer {
+  background-color: #f8f9fa;
+  font-size: 0.9rem;
+}
+footer h6 {
+  font-weight: 600;
+  margin-bottom: .75rem;
+}
+.section-padding {
+  padding: 3rem 0;
+}

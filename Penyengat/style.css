@@ -143,11 +143,16 @@ destination-card p {
 /* Efek zoom pada gambar di lightbox */
 /* Efek zoom pada gambar di lightbox */
 .lightbox img {
-  width: 50vw;
+  max-width: 90vw;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
   border-radius: 1rem;
-  transform: scale(1); /* Mengatur skala awal 1 */
-  transition: transform 0.3s ease; /* Efek smooth saat gambar diperbesar */
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  object-fit: contain;
 }
+
 
 /* Ketika lightbox muncul, perbesar gambar sedikit dengan transform */
 .lightbox.show img {
@@ -157,6 +162,11 @@ destination-card p {
 
 .story-img {
   background-image: url('https://img.freepik.com/premium-photo/beautiful-landscape-view-mount-fishtail-nepal_131480-208.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.highlight-img {
+  background-image: url('https://www.travelsecrets.in/wp-content/uploads/2023/03/himalayas.jpg');
   background-size: cover;
   background-position: center;
 }

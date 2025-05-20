@@ -4,7 +4,7 @@ body {
     }
 .hero {
   height: 103vh;
-  background: url('image/masjid.png') center/cover no-repeat;
+  background: url('image/masjid.jpeg') center/cover no-repeat;
   position: relative;
   color: white;
 }

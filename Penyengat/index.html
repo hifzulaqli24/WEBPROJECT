@@ -11,31 +11,36 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Trekker</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Tips</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
-        </ul>
-      </div>
+  <header class="hero">
+  <nav>
+    <div class="logo">Trekker</div>
+
+    <!-- FIXED ORDER: checkbox -> label -> nav links -->
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Tips</a>
+      <a href="#">Stories</a>
+      <a href="#">Deals</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="display-5 fw-bold">Discover the <span class="text-warning">World's Hidden</span> Wonders</h1>
-      <p class="lead">Explore unique destinations and cultures around the world.</p>
+  <div class="hero-content">
+    <h1>INTO THE <span>WILD</span></h1>
+    <p>Experience the magic of hidden places, from untamed beaches to remote forest trails...</p>
+    <div class="hero-buttons">
+      <button class="btn btn-light">Explore all trips</button>
+      <button class="btn btn-outline">Explore packages</button>
     </div>
-  </header>
+  </div>
+</header>
 
  <!-- Top Destinations -->
       <!-- Top Destinations -->

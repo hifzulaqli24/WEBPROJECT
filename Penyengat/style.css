@@ -1,46 +1,125 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
-.navbar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #eee;
-}
-.navbar-brand {
-  font-weight: 700;
-}
-.nav-link {
-  color: #333 !important;
-}
+      margin: 0;
+      font-family: sans-serif;
+    }
 .hero {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4H7mpe2E2IxGKn8A5qXoFCwwWH1IJsKGQg&s');
-  background-size: cover;
-  background-position: center;
-  border-radius: 1rem;
-  padding: 6rem 2rem;
+  height: 99vh;
+  background: url('image/masjid.png') center/cover no-repeat;
   position: relative;
-  text-align: center;
   color: white;
 }
+
 .hero::before {
   content: "";
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 190%;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 1rem;
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    #nav-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 40px;
+      }
+
+      #nav-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+      }
+    }
+
 .hero-content {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  left: 40px;
+  bottom: 60px;
+  max-width: 500px;
+  z-index: 2;
 }
-h2 {
-  font-weight: 600;
-  margin-top: 2rem;
+
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
 }
+
+.hero-content h1 span {
+  font-weight: bold;
+  color: white;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-light {
+  background-color: white;
+  color: black;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

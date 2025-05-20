@@ -82,7 +82,7 @@ body {
 .hero-content {
   position: absolute;
   left: 40px;
-  bottom: 120px;
+  bottom: 140px;
   max-width: 500px;
   z-index: 2;
 }
@@ -188,6 +188,16 @@ destination-card p {
   letter-spacing: 0.02em;
 }
 
+.section-padding {
+  padding-top: 10rem; /* memberi ruang dari atas */
+}
+
+.section-padding h2 {
+  margin-bottom: 1.5rem; /* beri jarak antara judul dan cards */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 
 

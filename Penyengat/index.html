@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trekker</title>
   <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
   <!-- Navbar -->
@@ -23,8 +24,8 @@
     <div class="nav-links">
       <a href="#">Home</a>
       <a href="#">Destinations</a> 
-      <a href="#">Tips</a>
-      <a href="#">Stories</a>
+      <a href="#">Gallery</a>
+      <a href="#">Komentar</a>
       <a href="about.html">About</a>
     </div>
   </nav>
@@ -33,7 +34,7 @@
     <h1>WELCOME TO <span>PENYENGAT</span></h1>
     <p>Pulau Penyengat, sebuah pulau kecil nan bersejarah di Kepulauan Riau, Indonesia, yang kaya akan warisan budaya Melayu dan saksi bisu Kesultanan Riau-Lingga ....</p>
     <div class="hero-buttons">
-      <a href="about.html" class="btn btn-light">More About</a>
+      <a href="about.html" class="btn btn-light" style="text-decoration: none;">More About</a>
     </div>
   </div>
 </header>
@@ -115,22 +116,7 @@
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/dolomites-mountains-south-tyrol-italy_181624-27861.jpg" alt="Pegunungan Dolomites, Italia" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/eiffel-tower-paris-sunset_181624-26308.jpg" alt="Menara Eiffel, Paris" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/lavender-field-sunset-valensole-provence_181624-26517.jpg" alt="Ladang Lavender, Prancis" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/taj-mahal-agra-india-blue-sky_181624-26473.jpg" alt="Taj Mahal, India" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/arashiyama-bamboo-forest-kyoto-japan_181624-26287.jpg" alt="Hutan Bambu Arashiyama, Jepang" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/moai-statues-easter-island_181624-28157.jpg" alt="Patung Moai, Pulau Paskah" /></div>
-
-<!-- Gambar tambahan ke-13 hingga ke-20 -->
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-scenery-lake-mountains-forest_181624-30372.jpg" alt="Moraine Lake, Kanada" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/mountain-reflection-norway-scenery_181624-17481.jpg" alt="Pegunungan Norwegia" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-village-santorini-greece_181624-12646.jpg" alt="Santorini, Yunani" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/amazing-northern-lights-aurora-borealis_181624-26542.jpg" alt="Aurora Borealis, Islandia" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/ancient-city-petra-jordan_181624-18637.jpg" alt="Petra, Yordania" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/crystal-clear-ocean-water-maldives_181624-30059.jpg" alt="Laut Maldives" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/dolomites-mountains-south-tyrol-italy_181624-27861.jpg" alt="Pegunungan Dolomites, Italia" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/eiffel-tower-paris-sunset_181624-26308.jpg" alt="Menara Eiffel, Paris" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/lavender-field-sunset-valensole-provence_181624-26517.jpg" alt="Ladang Lavender, Prancis" /></div>
-<div class="gallery-item"><img src="https://img.freepik.com/free-photo/taj-mahal-agra-india-blue-sky_181624-26473.jpg" alt="Taj Mahal, India" /></div>
-    <div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-village-santorini-greece_181624-12646.jpg" alt="Santorini, Yunani" /></div>
     <!-- Tambahkan semua gambar lainnya -->
   </div>
 
@@ -146,27 +132,30 @@
   <div class="komentar-container">
     <!-- Form Komentar (Kiri) -->
     <div class="komentar-form">
-      <h3>Tulis Komentar</h3>
+      <h3 style="color: aliceblue;" class="form-title">Tulis Komentar</h3>
       <form id="commentForm">
-        <label for="nameInput">Nama:</label>
+        <label for="nameInput" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 400;">Nama:</label>
+
         <input type="text" id="nameInput" required>
 
-        <label for="commentInput">Komentar:</label>
+        <label for="nameInput" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 400;">Komentar:</label>
         <textarea id="commentInput" rows="4" required></textarea>
 
-        <button type="submit">Kirim Komentar</button>
+        <button type="submit" class="form-title">Kirim Komentar</button>
       </form>
     </div>
 
     <!-- Komentar Terbaru (Kanan) -->
     <div class="komentar-display">
-      <h3>Komentar Terbaru</h3>
+      <h3 style="color: aliceblue;" class="form-title">Komentar Terbaru</h3>
       <div id="commentDisplay" class="comment-list">
-        <p class="text-muted">Belum ada komentar.</p>
+        <p class="text-muted" style="color: aliceblue;">Belum ada komentar.</p>
       </div>
     </div>
   </div>
 </section>
+
+
 
 
 

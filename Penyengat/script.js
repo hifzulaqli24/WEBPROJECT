@@ -115,5 +115,3 @@ galleryGrid.addEventListener("touchend", (e) => {
   }
 });
 
-
-

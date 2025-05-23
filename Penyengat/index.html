@@ -44,22 +44,22 @@
   <h2 class="text-center">Top Destinations</h2>
   <div class="destination-scroll mt-4">
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar1.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar1.jpeg');"></div>
       <p class="mb-0">Golden Bridge</p>
       <small class="text-muted">Vietnam</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar2.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar2.jpeg');"></div>
       <p class="mb-0">Dubrovnik</p>
       <small class="text-muted">Croatia</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar1.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar1.jpeg');"></div>
       <p class="mb-0">Cappadocia</p>
       <small class="text-muted">Turkey</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar2.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar2.jpeg');"></div>
       <p class="mb-0">Sydney Harbour</p>
       <small class="text-muted">Australia</small>
     </div>
@@ -69,27 +69,27 @@
       <small class="text-muted">France</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar2.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar2.jpeg');"></div>
       <p class="mb-0">Mt. Fuji</p>
       <small class="text-muted">Japan</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar1.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar1.jpeg');"></div>
       <p class="mb-0">Petra</p>
       <small class="text-muted">Jordan</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar2.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar2.jpeg');"></div>
       <p class="mb-0">Santorini</p>
       <small class="text-muted">Greece</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar1.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar1.jpeg');"></div>
       <p class="mb-0">Grand Canyon</p>
       <small class="text-muted">USA</small>
     </div>
     <div class="destination-card">
-      <div class="destination-img" style="background-image: url('gambar2.jpeg');"></div>
+      <div class="destination-img" style="background-image: url('image/gambar2.jpeg');"></div>
       <p class="mb-0">Machu Picchu</p>
       <small class="text-muted">Peru</small>
     </div>
@@ -98,15 +98,14 @@
 
 
   <!-- Gallery -->
+<!-- Gallery -->
 <section class="container section-padding">
-  <div class="d-flex justify-content-between align-items-center mb-3">
-    <button class="btn btn-outline-secondary" id="prevBtn">◀</button>
-    <h2 class="text-center flex-grow-1">Gallery Wisata</h2>
-    <button class="btn btn-outline-secondary" id="nextBtn">▶</button>
-  </div>
-  
-  <div class="gallery-grid" id="galleryGrid">
-    <!-- Gambar pertama hingga ke-12 -->
+  <h2 class="text-center mb-4">Gallery Wisata</h2>
+
+  <div class="gallery-grid">
+    <!-- Contoh item galeri -->
+    <div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-scenery-lake-mountains-forest_181624-30372.jpg" alt="Moraine Lake, Kanada" /></div>
+    <div class="gallery-item"><img src="https://img.freepik.com/free-photo/mountain-reflection-norway-scenery_181624-17481.jpg" alt="Pegunungan Norwegia" /></div>
     <div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-scenery-lake-mountains-forest_181624-30372.jpg" alt="Moraine Lake, Kanada" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/mountain-reflection-norway-scenery_181624-17481.jpg" alt="Pegunungan Norwegia" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-village-santorini-greece_181624-12646.jpg" alt="Santorini, Yunani" /></div>
@@ -131,8 +130,8 @@
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/eiffel-tower-paris-sunset_181624-26308.jpg" alt="Menara Eiffel, Paris" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/lavender-field-sunset-valensole-provence_181624-26517.jpg" alt="Ladang Lavender, Prancis" /></div>
 <div class="gallery-item"><img src="https://img.freepik.com/free-photo/taj-mahal-agra-india-blue-sky_181624-26473.jpg" alt="Taj Mahal, India" /></div>
-
-    
+    <div class="gallery-item"><img src="https://img.freepik.com/free-photo/beautiful-village-santorini-greece_181624-12646.jpg" alt="Santorini, Yunani" /></div>
+    <!-- Tambahkan semua gambar lainnya -->
   </div>
 
   <div class="lightbox" id="lightbox">
@@ -141,36 +140,34 @@
 </section>
 
 
-<!-- Komentar Section -->
-<section class="container section-padding">
-  <h2 class="text-center mb-4">Komentar Pengunjung</h2>
-  <div class="row">
+
+<section class="komentar-section">
+  <h2>Komentar Pengunjung</h2>
+  <div class="komentar-container">
     <!-- Form Komentar (Kiri) -->
-    <div class="col-md-6">
-      <h5>Tulis Komentar</h5>
+    <div class="komentar-form">
+      <h3>Tulis Komentar</h3>
       <form id="commentForm">
-        <div class="mb-3">
-          <label for="nameInput" class="form-label">Nama:</label>
-          <input type="text" class="form-control" id="nameInput" required>
-        </div>
-        <div class="mb-3">
-          <label for="commentInput" class="form-label">Komentar:</label>
-          <textarea class="form-control" id="commentInput" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Kirim Komentar</button>
+        <label for="nameInput">Nama:</label>
+        <input type="text" id="nameInput" required>
+
+        <label for="commentInput">Komentar:</label>
+        <textarea id="commentInput" rows="4" required></textarea>
+
+        <button type="submit">Kirim Komentar</button>
       </form>
     </div>
 
-<!-- Tampilan Komentar (Kanan) -->
-<div class="col-md-6">
-  <h5>Komentar Terbaru</h5>
-  <div id="commentDisplay" class="comment-list" style="min-height: 380px; max-height: 600px; overflow-y: auto;">
-    <p class="text-muted">Belum ada komentar.</p>
-  </div>
-</div>
+    <!-- Komentar Terbaru (Kanan) -->
+    <div class="komentar-display">
+      <h3>Komentar Terbaru</h3>
+      <div id="commentDisplay" class="comment-list">
+        <p class="text-muted">Belum ada komentar.</p>
+      </div>
     </div>
   </div>
 </section>
+
 
 
   <!-- Footer -->

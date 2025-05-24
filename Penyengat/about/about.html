@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Pulau Penyengat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #fefefe, #f0f4f8);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .ornament {
+    text-align: left;
+    display: flex;
+    flex-wrap: nowrap; /* agar tidak turun ke bawah */
+    overflow-x: auto;   /* tambahkan scroll horizontal jika terlalu banyak */
+    padding: 1rem 0;
+  }
+
+  .ornament img {
+    height: 60px;       /* sesuaikan ukuran ornamen */
+    width: auto;
+    flex-shrink: 0;     /* agar gambar tidak mengecil jika container sempit */
+  }
+
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #1b4332;
+    }
+
+    p.subheading {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+      color: #4a5568;
+      margin-bottom: 2.5rem;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+    }
+
+    .text-block, .text-block-bottom {
+      flex: 1 1 320px;
+      min-width: 300px;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #34495e;
+    }
+
+    .image-box {
+      flex: 1 1 300px;
+      min-width: 280px;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .image-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .vertical-images {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .vertical-images .about-image-container {
+      height: 200px;
+      overflow: hidden;
+      border-radius: 0.75rem;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    .about-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    blockquote {
+      margin: 3rem auto 1rem;
+      max-width: 600px;
+      font-style: italic;
+      color: #718096;
+      border-left: 4px solid #1b4332;
+      padding-left: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .source {
+      text-align: center;
+      color: #a0aec0;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .source a {
+      color: #1b4332;
+      text-decoration: none;
+    }
+
+    .fun-fact {
+      background-color:rgba(27, 67, 50, 0.65);;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid #1b4332;
+      border-radius: 0.75rem;
+      margin: 2rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      color: white;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin: 3rem auto 0;
+      background-color: #1b4332;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+      text-align: center;
+    }
+
+    .cta-button:hover {
+      background-color: #1b4332;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="about">
+    <div class="container">
+
+      <div class="ornament">
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+        <img src="./img_about/orname.png" alt="Ornamen Melayu"/>
+      </div>
+
+      <h2>About Pulau Penyengat</h2>
+
+      <p class="subheading">
+        Pulau Penyengat, sebuah pulau kecil nan bersejarah di Kepulauan Riau, Indonesia, yang kaya akan warisan budaya Melayu dan saksi bisu Kesultanan Riau-Lingga.
+      </p>
+
+      <div class="flex">
+        <div class="text-block">
+          <p>
+            Pulau Penyengat merupakan pulau kecil yang terletak sekitar 6 kilometer dari pusat kota Tanjung Pinang di Provinsi Kepulauan Riau. Pulau ini terkenal karena perannya sebagai pusat pemerintahan Kesultanan Riau-Lingga pada abad ke-18 hingga abad ke-19.
+          </p>
+          <p>
+            Sejarahnya bermula ketika Sultan Abdul Rahman Muazzam Syah membangun pulau ini sebagai markas sekaligus pusat kebudayaan Melayu. Di sini berdiri Masjid Raya Sultan Riau yang dibangun pada tahun 1844, sebuah ikon arsitektur khas Melayu yang juga menjadi pusat aktivitas keagamaan dan kebudayaan.
+          </p>
+        </div>
+
+        <div class="image-box">
+          <img src="./img_about/penyengat.jpg" alt="Masjid Sultan Riau, Pulau Penyengat" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="flex">
+        <div class="vertical-images">
+          <div class="about-image-container">
+            <img src="./img_about/penyengat.jpg" alt="Lanskap Pulau Penyengat 1" loading="lazy" />
+          </div>
+          <div class="about-image-container">
+            <img src="./img_about/penyengat.jpg" alt="Lanskap Pulau Penyengat 2" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="text-block-bottom">
+          <p>
+            Selain masjid, Pulau Penyengat juga menyimpan banyak peninggalan sejarah berupa makam para Sultan dan tokoh penting, bangunan-bangunan tradisional Melayu, serta manuskrip kuno yang memuat berbagai ilmu pengetahuan dan adat istiadat.
+          </p>
+          <p>
+            Saat ini, pulau ini tidak hanya menjadi objek wisata budaya dan sejarah, tetapi juga tempat untuk belajar dan melestarikan tradisi Melayu yang telah berlangsung turun-temurun.
+          </p>
+          <p>
+            Keindahan alam Pulau Penyengat yang masih alami, dengan hamparan pantai dan pemandangan laut yang menenangkan, membuat pulau ini semakin menarik untuk dikunjungi oleh wisatawan lokal maupun mancanegara.
+          </p>
+        </div>
+      </div>
+
+      <div class="fun-fact">
+        <strong>Fakta Unik:</strong> Masjid Raya Sultan Riau dibangun menggunakan putih telur sebagai bahan perekat utama dindingnya!
+      </div>
+
+      <blockquote>
+        "Pulau Penyengat adalah warisan budaya Melayu yang kaya dan merupakan saksi bisu perjalanan sejarah Kesultanan Riau-Lingga."
+      </blockquote>
+
+      <p class="source">
+        Sumber: <a href="https://id.wikipedia.org/wiki/Pulau_Penyengat" target="_blank" rel="noopener noreferrer">Wikipedia - Pulau Penyengat</a>
+      </p>
+
+      <div style="text-align:center;">
+        <a href="galeri.html" class="cta-button">Jelajahi Galeri Penyengat</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

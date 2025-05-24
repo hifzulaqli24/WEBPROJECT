@@ -30,7 +30,7 @@ body {
 
 .hero {
   height: 103vh;
-  background: url('image/masjid.jp') center/cover no-repeat;
+  background: url('image/baru.png') center/cover no-repeat;
   position: relative;
   color: white;
 }
@@ -39,7 +39,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
 }
     nav {
       display: flex;
@@ -115,15 +115,13 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 1.2;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .hero-content h1 span {
   font-weight: bold;
   color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .hero-content p {

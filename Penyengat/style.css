@@ -242,7 +242,7 @@ body {
 
     .top-destination-section {
       position: relative;
-      background-image: url('image/bg_des.jpeg'); /* Ganti path sesuai file kamu */
+      background-image: url('image/bg_des.jpeg'); /* Ganti dengan backgroundmu */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -257,7 +257,7 @@ body {
       z-index: 1;
     }
 
-    .top-destination-section > * {
+    .top-destination-section > .container {
       position: relative;
       z-index: 2;
     }

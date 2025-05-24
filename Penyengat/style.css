@@ -33,10 +33,13 @@ body {
 
 .hero {
   height: 103vh;
-  background: url('image/baru.png') center/cover no-repeat;
+   background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.0), transparent 0%, transparent 50%, rgba(0, 0, 0, 1.0)),
+    url('image/baru.png') center/cover no-repeat;
   position: relative;
   color: white;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.70);
+  position: relative;
+  color: white;
 
 }
 
@@ -44,8 +47,9 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
 }
+
     nav {
       display: flex;
       align-items: center;
@@ -242,7 +246,9 @@ body {
 
     .top-destination-section {
       position: relative;
-      background-image: url('image/bg_des.jpeg'); /* Ganti dengan backgroundmu */
+      background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent 70%, transparent 50%, rgba(0, 0, 0, 1.0)),
+    url('image/b.png') center/cover no-repeat;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -263,7 +269,7 @@ body {
     }
 
 .section-padding {
-  padding-top: 10rem; /* memberi ruang dari atas */
+  padding-top: 5rem; /* memberi ruang dari atas */
 }
 
 .section-padding h2 {
@@ -532,3 +538,48 @@ footer ul li a:hover {
   }
 }
 
+.m{
+ position: relative;
+      background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent 70%, transparent 40%, rgba(0, 0, 0, 1.0)),
+    url('image/g.png') center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+}
+
+.m::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.m > .container {
+      position: relative;
+      z-index: 1;
+    }
+
+.o{
+ position: relative;
+      background: 
+    linear-gradient(to bottom, rgba(0, 0, 0, 1.0), transparent 70%, transparent 40%, rgba(0, 0, 0, 0.60)),
+    url('image/g.png') center/cover no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+}
+
+.o::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.o > .testimoni-section {
+      position: relative;
+      z-index: 1;
+    }

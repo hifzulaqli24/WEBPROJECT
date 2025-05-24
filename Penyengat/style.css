@@ -1,3 +1,6 @@
+body{
+  background-color: #e3e3e3;
+}
 /* Font Reguler */
 @font-face {
   font-family: 'Poppins';
@@ -33,6 +36,8 @@ body {
   background: url('image/baru.png') center/cover no-repeat;
   position: relative;
   color: white;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.70);
+
 }
 
 .hero::before {

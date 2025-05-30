@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeri Penyengat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e3e3e3;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      font-size: 2rem;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 0 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 4/3; /* menjaga proporsi seragam */
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Galeri Penyengat</h1>
+
+  <div class="gallery-container">
+    <!-- Gambar kamu tetap sama -->
+    <div class="gallery-item"><img src="./imggaleri/D1.jpg" alt="Galeri 1"></div>
+    <div class="gallery-item"><img src="./imggaleri/D2.jpg" alt="Galeri 2"></div>
+    <div class="gallery-item"><img src="./imggaleri/D3.jpg" alt="Galeri 3"></div>
+    <div class="gallery-item"><img src="./imggaleri/D4.jpg" alt="Galeri 4"></div>
+    <div class="gallery-item"><img src="./imggaleri/D5.jpg" alt="Galeri 5"></div>
+    <div class="gallery-item"><img src="./imggaleri/D6.jpg" alt="Galeri 6"></div>
+    <div class="gallery-item"><img src="./imggaleri/D7.jpg" alt="Galeri 7"></div>
+    <div class="gallery-item"><img src="./imggaleri/D8.jpg" alt="Galeri 8"></div>
+    <div class="gallery-item"><img src="./imggaleri/D9.jpg" alt="Galeri 9"></div>
+    <div class="gallery-item"><img src="./imggaleri/D10.jpg" alt="Galeri 10"></div>
+    <div class="gallery-item"><img src="./imggaleri/D11.jpg" alt="Galeri 11"></div>
+    <div class="gallery-item"><img src="./imggaleri/D12.jpg" alt="Galeri 12"></div>
+    <div class="gallery-item"><img src="./imggaleri/D13.jpg" alt="Galeri 13"></div>
+    <div class="gallery-item"><img src="./imggaleri/D14.jpg" alt="Galeri 14"></div>
+    <div class="gallery-item"><img src="./imggaleri/D15.jpg" alt="Galeri 15"></div>
+    <div class="gallery-item"><img src="./imggaleri/D16.jpg" alt="Galeri 16"></div>
+    <div class="gallery-item"><img src="./imggaleri/D17.jpg" alt="Galeri 17"></div>
+    <div class="gallery-item"><img src="./imggaleri/D18.jpg" alt="Galeri 18"></div>
+    <div class="gallery-item"><img src="./imggaleri/D19.jpg" alt="Galeri 19"></div>
+    <div class="gallery-item"><img src="./imggaleri/D20.jpg" alt="Galeri 20"></div>
+    <div class="gallery-item"><img src="./imggaleri/D21.jpg" alt="Galeri 21"></div>
+    <div class="gallery-item"><img src="./imggaleri/D22.jpg" alt="Galeri 22"></div>
+    <div class="gallery-item"><img src="./imggaleri/D23.jpg" alt="Galeri 23"></div>
+  </div>
+
+</body>
+</html>

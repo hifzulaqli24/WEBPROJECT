@@ -9,6 +9,7 @@
 </head>
 <body>
   <!-- Navbar -->
+   <section id="home">
   <header class="hero">
   <nav>
     <div class="logo" style="color: #ffc107;">Penyengat</div>
@@ -22,10 +23,10 @@
     </label>
 
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Destinations</a> 
-      <a href="#">Gallery</a>
-      <a href="#">Komentar</a>
+      <a href="#home">Home</a>
+      <a href="#sect">Destinations</a> 
+      <a href="#galeri">Gallery</a>
+      <a href="#komentar">Komentar</a>
       <a href="about/about.html">About</a>
     </div>
   </nav>
@@ -37,7 +38,9 @@
       <a href="about/about.html" class="btn-more" style="text-decoration: none;">More About</a>
     </div>
 </header>
+</section>
 
+  <section id="sect">
  <section class="section-padding top-destination-section">
     <div class="container">
       <h2 class="text-center">Top Destinations</h2>
@@ -122,9 +125,11 @@
       </div>
     </div>
   </section>
+  </section>
 
   <!-- Gallery -->
 <!-- Gallery -->
+ <section id="galeri">
 <section class="section-padding m">
   <div class="container">
   <h2 class="text-center mb-4" style="color: #ffff;">Gallery Wisata</h2>
@@ -151,7 +156,9 @@
   </div>
   </div>
 </section>
+</section>
 
+  <section id="komentar">
   <section class="o">
     <div class="testimoni-section">
   <h2 class="section-title" style="color: #ffff;">Comment</h2>
@@ -202,13 +209,14 @@
   </div>
   </div>
 </section>
+</section>
 
 
 <!-- Footer -->
-<footer>
+<footer class="footer">
   <div class="container">
     <div class="footer-content">
-      <div class="footer-column">
+      <div class="footer-section">
         <h6>Explore</h6>
         <ul class="list-unstyled">
           <li><a href="#">Tempat Wisata Populer</a></li>
@@ -217,7 +225,7 @@
           <li><a href="#">Kuliner Lokal</a></li>
         </ul>
       </div>
-      <div class="footer-column">
+      <div class="footer-section">
         <h6>About Us</h6>
         <ul class="list-unstyled">
           <li><a href="#">Visi & Misi</a></li>
@@ -226,7 +234,7 @@
           <li><a href="#">Kontak</a></li>
         </ul>
       </div>
-      <div class="footer-column">
+      <div class="footer-section">
         <h6>Resources</h6>
         <ul class="list-unstyled">
           <li><a href="#">Peta Wisata</a></li>
@@ -235,7 +243,7 @@
           <li><a href="#">Kalender Event</a></li>
         </ul>
       </div>
-      <div class="footer-column">
+      <div class="footer-section">
         <h6>Tentang Pulau Penyengat</h6>
         <p>
           Pulau Penyengat adalah pulau bersejarah di Provinsi Kepulauan Riau, Indonesia. Dikenal sebagai pusat budaya dan peradaban Melayu serta peninggalan Kesultanan Riau-Lingga.
@@ -249,6 +257,8 @@
     </div>
   </div>
 </footer>
+
+<button id="scrollToTopBtn" title="Kembali ke atas">↑</button>
 
   <script src="script.js"></script>
 </body>

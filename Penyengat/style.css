@@ -567,7 +567,19 @@ footer ul li a:hover {
 }
 
 /* Responsif */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .comment {
+    font-size: 13px;
+  }
   .testimoni-container {
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -580,6 +592,7 @@ footer ul li a:hover {
     margin-right: 16px;
     scroll-snap-align: center;
   }
+  
 }
 
 .m{
